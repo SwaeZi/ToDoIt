@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(81, 81, 81)
+}
+
+h1,h2 {
+    color: white;
+}
+main.container {
+    background-color: rgb(160, 115, 243);
+}
+
+.display3 {
+    width: 200px;
+    height: 300px;
+}
+
+.task{
+    font: 400;
+    width: 200px;
+    height: 300px
+}
