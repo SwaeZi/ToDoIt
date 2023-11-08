@@ -19,11 +19,13 @@
     <main class="container">
         <h2 class="display2 text-center">Do-it!</h2>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="nextTask" name="task" placeholder="What is your next task?">
-            <input type="submit" onclick=""  id="buttonTask">
+            <input type="text" class="form-control" id="titleTask" name="title" placeholder="Title?">
+            <input type="text" class="form-control" id="contentTask" name="content" placeholder="To Do">
+            <input type="submit" onclick="addTask()"  id="buttonTask">
+            <button type="button" class="btn btn-danger" onclick="deleteButton()">Delete</button>
         </div>
-        <div class="form-floating mb-3">
-            <div class="form-control" id="output" name="task">
+        <div class="form-floating mb-3" .btn-lg>
+            
 
             </div>
 
