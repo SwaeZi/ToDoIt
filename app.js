@@ -6,11 +6,6 @@ const container = document.getElementsByClassName("form-floating mb-3");
 
 
 
-function uniqueDiv() {
-  let div = document.createElement('div')
-
-}
-
 function addTask() {
           let taskContainer = document.createElement('div')
           let divTitle = document.createElement('h3')
@@ -23,10 +18,17 @@ function addTask() {
           alert ("Hmm why so empty?");
         } else {
           delButton.className = "btn btn-danger";
-          delButton.textContent = "Delete"
+          delButton.textContent = "Delete";
+          delButton.addEventListener("click", function deleteButton() {
+            let mainContainer = document.getElementById("task");
+            mainContainer.remove();
+          });
           taskContainer.id = "task";
           divTitle.id = "titleTask";
+          divTitle.contentEditable = "true";
           divTask.id = "contentTask"
+          divTask.contentEditable = "true";
+          divTitle.className= "form-control"
           divTask.className = "form-control";
           divTask.style.backgroundColor = "white";
           divTitle.style.backgroundColor= "white";
@@ -39,7 +41,4 @@ function addTask() {
         }
 };
 
-function deleteButton() {
-      let mainContainer = document.getElementById("task")
-      mainContainer.remove()
-}
+
